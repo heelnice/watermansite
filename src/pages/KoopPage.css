@@ -1,0 +1,131 @@
+.koop-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.koop-intro {
+  margin-bottom: 4rem;
+}
+
+.koop-opties {
+  margin-bottom: 4rem;
+}
+
+.opties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.optie-card {
+  background-color: var(--color-light-beige);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-warm-orange);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.optie-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 31, 26, 0.1);
+}
+
+.optie-card h3 {
+  color: var(--color-warm-orange);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.optie-card p {
+  flex: 1;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.optie-card .cta-button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.koop-uitleg {
+  margin-bottom: 4rem;
+  padding: 2.5rem;
+  background-color: var(--color-light-beige);
+  border-radius: 8px;
+  border-top: 4px solid var(--color-warm-orange);
+}
+
+.koop-uitleg h2 {
+  margin-top: 0;
+  color: var(--color-dark-brown);
+}
+
+.uitleg-content {
+  margin-top: 1.5rem;
+}
+
+.uitleg-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.uitleg-content p:last-child {
+  margin-bottom: 0;
+}
+
+.koop-uitleg strong {
+  color: var(--color-dark-brown);
+  font-weight: 600;
+}
+
+.koop-direct {
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  background-color: var(--color-light-beige);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-warm-orange);
+}
+
+.koop-direct h2 {
+  margin-top: 0;
+  color: var(--color-dark-brown);
+}
+
+.koop-direct p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.koop-direct strong {
+  color: var(--color-dark-brown);
+  font-weight: 600;
+}
+
+.koop-direct .cta-button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .opties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .optie-card,
+  .koop-uitleg,
+  .koop-direct {
+    padding: 1.5rem;
+  }
+
+  .optie-card .cta-button,
+  .koop-direct .cta-button {
+    width: 100%;
+  }
+}
+
