@@ -17,51 +17,15 @@ export function AuteurPage() {
       <div className="author-content">
         <section className="author-bio">
           <p className="lead-text">
-            Stan Plandsoen groeide op in een dorp waar verhalen sneller verspreiden dan de bus. 
-            Hij geniet van het vertellen van korte anekdotes en lange verhalen – soms in de kroeg, 
-            soms op papier.
+          Ik groeide op in een dorp waar verhalen sneller rondgaan dan de bus. Ik vertel ze graag: korte anekdotes en lange verhalen, soms in de kroeg, soms op papier. Schrijven doe ik al langer. Meestal losse stukken, observaties en herinneringen, tot tijdens de coronatijd De Waterman in mijn hoofd ontstond en ik eraan begon.
           </p>
-
           <p>
-            Normaal werkt Stan in de IT, maar momenteel woont hij een half jaar in een arme regio 
-            in India, waar hij computerles geeft op een middelbare school. Schrijven doet hij al 
-            langer. Vaak korte stukken en losse verhalen, maar tijdens de coronatijd kwam 
-            <em> De Waterman</em> in zijn hoofd en begon hij eraan.
+          Pas dit jaar had ik de rust en tijd om het boek af te maken. De Waterman is mijn debuutroman: een verhaal over vriendschap, loyaliteit en de botsing tussen een klein dorp en de rest van de wereld. Een wereld die langzaam binnendringt, terwijl het leven in de kroeg, het darten en de onderlinge banden ogenschijnlijk hetzelfde blijven.
           </p>
-
           <p>
-            Pas dit jaar, toen hij ineens meer tijd had, heeft hij het boek afgemaakt. 
-            <em> De Waterman</em> is zijn debuutroman: een ode aan vriendschap, dorpsleven en 
-            de schoonheid van het alledaagse.
+          Wat begint als een herkenbare dorpsroman vol slices of life, groeit uit tot een verhaal over verlies, acceptatie en volwassen worden. Het boek neemt de tijd, zit vol humor en melancholie, en bouwt langzaam op naar een wending waarin keuzes onvermijdelijk worden. Schrijvers als Dimitri Verhulst, Tommy Wieringa en Herman Brusselmans waren daarbij een inspiratie, al blijft De Waterman vooral mijn eigen verhaal.
           </p>
-
-          <p className="author-quote">
-            "Ik noem darts de mooiste TV-sport."
-          </p>
-        </section>
-
-        <section className="book-origin">
-          <h2>Over De Waterman</h2>
-          <p>
-            <em>De Waterman</em> is een verhaal over vriendschap, loyaliteit en de botsing tussen 
-            een klein dorp en de rest van de wereld. Iets dat Stan zelf maar al te goed kent vanuit 
-            zijn jeugd. Het boek vangt de warmte van avonden in de kroeg en de humor van vriendschap 
-            die eindeloos lijkt, maar bouwt langzaam op naar een climax waarin het verhaal een wending 
-            neemt.
-          </p>
-
-          <p>
-            Wat begint als een herkenbare dorpsroman vol slices of life, eindigt als een aangrijpend 
-            verhaal over verlies, acceptatie en volwassen worden. Schrijvers als Dimitri Verhulst, 
-            Tommy Wieringa en Herman Brusselmans inspireren Stan. <em>De Waterman</em> is geen 
-            standaard pageturner; het is een roman die de tijd neemt, vol humor en melancholie, 
-            en die uitmondt in een onverwachte ontknoping.
-          </p>
-
-          <p>
-            Zo'n twintig mensen hebben het boek inmiddels gelezen, en Stan merkt dat iedereen er 
-            iets van zichzelf in herkent – vaak vanuit hun eigen dorp.
-          </p>
+          <p>Inmiddels hebben zo’n twintig mensen het boek gelezen. Wat me het meest bijblijft, is dat bijna iedereen er iets van zichzelf in herkent — vaak vanuit hun eigen dorp.</p>
         </section>
       </div>
     </div>

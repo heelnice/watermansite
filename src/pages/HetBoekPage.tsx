@@ -1,4 +1,5 @@
-import coverImage from "../assets/coverpng.png";
+import coverImage from "../assets/Raam variant NIEUW.png";
+import kladdegatMap from "../assets/Kladdegat_SP.jpg";
 import "./HetBoekPage.css";
 
 export function HetBoekPage() {
@@ -57,20 +58,27 @@ export function HetBoekPage() {
           <div className="themes-grid">
             <div className="theme-card">
               <h3>Vriendschap</h3>
-              <p>De band tussen vier mannen die elkaar al jaren kennen, maar wier levens uiteen beginnen te lopen.</p>
+              <p>Vier mannen die al jaren samen optrekken, terwijl hun levens langzaam uit elkaar beginnen te bewegen.</p>
             </div>
             <div className="theme-card">
-              <h3>Dorpsleven</h3>
-              <p>De warmte en geborgenheid van een kleine gemeenschap, maar ook de beperkingen die dat met zich meebrengt.</p>
+              <h3>De wereld komt binnen</h3>
+              <p>Waar een hechte gemeenschap botst met krachten die groter zijn dan het dorp zelf.</p>
             </div>
             <div className="theme-card">
-              <h3>Verlies</h3>
-              <p>Hoe je omgaat met het onverwachte verlies van iemand die dichtbij staat.</p>
+              <h3>Blijven of vertrekken</h3>
+              <p>De aantrekkingskracht van het bekende tegenover de belofte van elders.</p>
             </div>
             <div className="theme-card">
-              <h3>Volwassen worden</h3>
+              <h3>Blijven wie je bent</h3>
               <p>De vraag of je kunt blijven wie je bent wanneer alles om je heen verandert.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="map-section">
+          <h2>Plattegrond van Kladdegat</h2>
+          <div className="map-container">
+            <img src={kladdegatMap} alt="Plattegrond van Kladdegat" className="kladdegat-map" />
           </div>
         </section>
 

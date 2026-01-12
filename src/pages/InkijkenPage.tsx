@@ -1,31 +1,30 @@
 import "./InkijkenPage.css";
 
 export function InkijkenPage() {
+  const pdfUrl = "/Inkijkexamplaar.pdf";
+  
   return (
     <div className="preview-page">
       <div className="preview-header">
         <h1>Inkijken</h1>
-        <p className="preview-intro">
-          Lees hier de eerste pagina's van <em>De Waterman</em> en proef de sfeer van Kladdegat.
-        </p>
       </div>
 
       <div className="preview-content">
         <div className="preview-text">
           <p className="preview-note">
-            <em>Binnenkort beschikbaar: een uitgebreid fragment uit het eerste hoofdstuk.</em>
+            <em>Hieronder vind je het eerste hoofdstuk van De Waterman. Scroll door het document om het volledige fragment te lezen.</em>
           </p>
           
-          <div className="preview-placeholder">
-            <p>
-              Hier komt binnenkort een fragment uit <em>De Waterman</em>. Je kunt dan de eerste 
-              pagina's lezen en een indruk krijgen van het verhaal, de sfeer en de schrijfstijl.
-            </p>
-            
-            <p>
-              Wil je op de hoogte blijven wanneer het fragment beschikbaar is? Houd deze pagina 
-              in de gaten of neem contact op via de auteurspagina.
-            </p>
+          <div className="pdf-viewer-container">
+            <embed
+              src={pdfUrl}
+              type="application/pdf"
+              className="pdf-viewer"
+              title="Inkijkexemplaar De Waterman"
+            />
+            <div className="pdf-fallback">
+              <p>Kan de PDF niet laden in de browser? <a href={pdfUrl} target="_blank" rel="noopener noreferrer">Klik hier om het bestand te openen of te downloaden</a>.</p>
+            </div>
           </div>
 
           <div className="preview-cta">

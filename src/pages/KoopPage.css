@@ -52,21 +52,20 @@
   margin-top: auto;
 }
 
+.epub-card .cta-button {
+  margin-top: 1.5rem;
+}
+
 .koop-uitleg {
   margin-bottom: 4rem;
-  padding: 2.5rem;
-  background-color: var(--color-light-beige);
-  border-radius: 8px;
-  border-top: 4px solid var(--color-warm-orange);
 }
 
 .koop-uitleg h2 {
-  margin-top: 0;
   color: var(--color-dark-brown);
 }
 
 .uitleg-content {
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .uitleg-content p {
@@ -118,7 +117,6 @@
   }
 
   .optie-card,
-  .koop-uitleg,
   .koop-direct {
     padding: 1.5rem;
   }
