@@ -1,0 +1,432 @@
+.koop-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+/* ----- Product section: two columns (image left, info right) ----- */
+.koop-product {
+  margin-bottom: 3rem;
+}
+
+.koop-product-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.koop-product-image-col {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.koop-product-image-wrap {
+  background: var(--color-light-beige);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(42, 31, 26, 0.08);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.koop-product-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 4px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.koop-product-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.koop-product-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark-brown);
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.koop-product-author {
+  font-size: 1rem;
+  color: var(--color-dark-brown);
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Kies je uitvoering (Bol.com style) */
+.koop-uitvoering {
+  margin-top: 0.25rem;
+}
+
+.koop-uitvoering-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+  margin-bottom: 0.6rem;
+}
+
+.koop-uitvoering-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.koop-uitvoering-btn {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+  background: #fff;
+  border: 2px solid rgba(42, 31, 26, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.koop-uitvoering-btn:hover {
+  border-color: var(--color-warm-orange);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.koop-uitvoering-btn.active {
+  border-color: var(--color-warm-orange);
+  background: var(--color-warm-orange);
+  color: #fff;
+}
+
+/* Price & availability */
+.koop-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-warm-orange);
+}
+
+.koop-price-range {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.koop-price-sep {
+  color: var(--color-dark-brown);
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.koop-availability {
+  font-size: 0.95rem;
+  color: var(--color-dark-brown);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.koop-cta-main {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+.koop-fysiek-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.koop-fysiek-divider {
+  height: 0;
+  border: none;
+  border-top: 1px solid rgba(42, 31, 26, 0.12);
+  margin: 0.25rem 0 0 0;
+}
+
+.koop-below-divider {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.koop-toelichting.koop-toelichting-inline {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.koop-cta-secondary {
+  align-self: flex-start;
+}
+
+/* Toelichting under CTAs (changes with edition) */
+.koop-toelichting {
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(42, 31, 26, 0.12);
+}
+
+.koop-toelichting p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 0.75rem 0;
+  color: var(--color-dark-brown);
+}
+
+.koop-toelichting p:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- Below the two columns ----- */
+.koop-below-columns {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(42, 31, 26, 0.12);
+}
+
+.koop-below-heading {
+  color: var(--color-dark-brown);
+  font-size: 1.35rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Standalone bierprijs tracker (only when ePub selected) – full width */
+.beer-tracker-standalone {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1.5rem;
+  background: var(--color-light-beige);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-warm-orange);
+  color: var(--color-dark-brown);
+}
+
+.beer-tracker-standalone .beer-tracker-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-warm-orange);
+  margin: 0 0 0.75rem 0;
+  text-align: left;
+}
+
+.beer-tracker-standalone .beer-chart-wrap {
+  min-height: 220px;
+  width: 100%;
+}
+
+.beer-tracker-standalone .beer-tracker-footer {
+  font-size: 0.7rem;
+  color: var(--color-dark-brown);
+  opacity: 0.7;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/* Full-width interactive chart container */
+.beer-chart-container {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+}
+
+.beer-chart-svg-interactive {
+  display: block;
+  cursor: crosshair;
+}
+
+.beer-chart-dot {
+  fill: var(--color-warm-orange);
+  opacity: 0.6;
+  transition: r 0.15s ease, opacity 0.15s ease;
+}
+
+.beer-chart-dot-hover {
+  opacity: 1;
+  fill: var(--color-warm-orange);
+}
+
+.beer-chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-dark-brown);
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Shared: beer chart (used in standalone block) */
+.beer-chart-wrap {
+  flex: 1;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer-chart-svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.beer-chart-grid {
+  stroke: rgba(42, 31, 26, 0.15);
+  stroke-width: 0.5;
+}
+
+.beer-chart-line {
+  stroke: var(--color-warm-orange);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.beer-chart-axis,
+.beer-chart-axis-x {
+  font-size: 8px;
+  fill: var(--color-dark-brown);
+  opacity: 0.75;
+}
+
+.beer-tracker-footer {
+  font-size: 0.65rem;
+  color: var(--color-dark-brown);
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
+/* Uitleg content (Waarom deze prijzen / Hulp bij installeren) */
+.uitleg-content {
+  margin-top: 0;
+}
+
+.uitleg-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: var(--color-dark-brown);
+}
+
+.uitleg-content p:last-child {
+  margin-bottom: 0;
+}
+
+.uitleg-content ol {
+  margin: 0 0 1.25rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.uitleg-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  color: var(--color-dark-brown);
+}
+
+.uitleg-content li::marker {
+  font-weight: 700;
+}
+
+/* ----- Legacy/optional (keep for any remaining refs) ----- */
+.koop-intro {
+  margin-bottom: 4rem;
+}
+
+.koop-uitleg {
+  margin-bottom: 4rem;
+}
+
+.koop-uitleg h2 {
+  color: var(--color-dark-brown);
+}
+
+.koop-uitleg strong {
+  color: var(--color-dark-brown);
+  font-weight: 600;
+}
+
+.koop-direct {
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  background-color: var(--color-light-beige);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-warm-orange);
+}
+
+.koop-direct h2 {
+  margin-top: 0;
+  color: var(--color-dark-brown);
+}
+
+.koop-direct p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.koop-direct strong {
+  color: var(--color-dark-brown);
+  font-weight: 600;
+}
+
+.koop-direct .cta-button {
+  margin-top: 1rem;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .koop-product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .koop-product-image-col {
+    position: static;
+  }
+
+  .koop-product-image-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .koop-uitvoering-buttons {
+    flex-direction: column;
+  }
+
+  .koop-uitvoering-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .koop-cta-main,
+  .koop-cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .beer-tracker-standalone {
+    max-width: 100%;
+  }
+
+  .koop-direct {
+    padding: 1.5rem;
+  }
+
+  .koop-direct .cta-button {
+    width: 100%;
+  }
+}
